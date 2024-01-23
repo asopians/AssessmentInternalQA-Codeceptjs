@@ -1,0 +1,25 @@
+{
+  "name": "skill-testqaenginner",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.spesolution.net/asep.sauri/skill-testqaenginner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.5.11",
+    "puppeteer": "^21.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.2",
+    "faker": "^5.5.3",
+    "supertest": "^6.3.4"
+  }
+}
