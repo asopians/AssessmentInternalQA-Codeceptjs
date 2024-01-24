@@ -1,5 +1,7 @@
 Feature("Signup");
 const faker = require("faker");
+const fs = require("fs");
+
 
 Scenario("Signup-user", ({ I }) => {
   I.amOnPage(process.env.url);
@@ -14,4 +16,4 @@ Scenario("Signup-user", ({ I }) => {
   I.grabPopupText("Sign up successful.");
   I.saveScreenshot("Signup_user.png");
   I.amAcceptingPopups("OK");
-}).tag("Signup").tag("Positive");
+});
