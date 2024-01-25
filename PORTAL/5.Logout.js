@@ -9,7 +9,8 @@ Scenario("Logout-user", ({ I }) => {
   I.click("//button[.='Log in']");
   I.wait(3);
   I.see("Welcome " + process.env.uname);
+  I.saveScreenshot("Before_logout_user.png");
   I.click("//a[.='Log out']");
   I.dontSee("Welcome " + process.env.uname);
-  I.saveScreenshot("Logout_user.png");
+  I.saveScreenshot("After_Logout_user.png");
 }).tag("Logout").tag("Positive");
