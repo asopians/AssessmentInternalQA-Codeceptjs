@@ -2,12 +2,13 @@ Feature("SignupNegativeCase");
 const faker = require("faker");
 
 Scenario("Sign Username Kosong", ({ I }) => {
-  I.amOnPage(process.env.url);
+  // Proses Signup Username Kosong
+  I.amOnPage(process.env.url); // using url from env
   I.click("//a[.='Sign up']");
   I.wait(3);
   I.waitForElement("//h5[@id='signInModalLabel']");
   I.fillField("//input[@id='sign-username']", "");
-  I.fillField("//input[@id='sign-password']", process.env.password);
+  I.fillField("//input[@id='sign-password']", process.env.password); // using env password
   I.click("//button[.='Sign up']");
   I.grabPopupText("Please fill out Username and Password.");
   I.seeInPopup("Please fill out Username and Password.");
@@ -16,12 +17,13 @@ Scenario("Sign Username Kosong", ({ I }) => {
 })
 
 Scenario("Sign Password Kosong", ({ I }) => {
-  I.amOnPage(process.env.url);
+  // Proses Signup Password Kosong
+  I.amOnPage(process.env.url); // using url from env
   I.click("//a[.='Sign up']");
   I.wait(3);
   I.waitForElement("//h5[@id='signInModalLabel']");
-  const randUname = faker.random.alphaNumeric(10);
-  I.fillField("//input[@id='sign-username']", "sopian" + randUname);
+  const randUname = faker.random.alphaNumeric(10); // generate random alphanumberic
+  I.fillField("//input[@id='sign-username']", "sopian" + randUname); // generate random username
   I.fillField("//input[@id='sign-password']", "");
   I.click("//button[.='Sign up']");
   I.grabPopupText("Please fill out Username and Password.");

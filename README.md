@@ -45,6 +45,7 @@ Download and Install Visual Code Studio dari [[official Java website](https://ww
 
 ## Dsiclaimer
 1. Pastikan perangkat anda mendukung dan jaringan stabil.
+2. Jika ingin browser di tampilkan untuk codecept.conf.js bisa di hapus pada "--headless".
 
 <hr>
 </ol>
