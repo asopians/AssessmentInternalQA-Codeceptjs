@@ -9,8 +9,15 @@ const faker = require("faker");
            .send(args.PayloadBody)
     }
 
+    const CreateUserPathSelainPost = (args) => {
+        return request
+           .delete(args.path || '/public/v2/users')
+           .set(args.PayloadHeader)
+           .send(args.PayloadBody)
+    }
 
     
 module.exports = {
     CreateUserNormal,
+    CreateUserPathSelainPost
 }

@@ -17,7 +17,7 @@ exports.config = {
       show: true,
       windowSize: '1200x900',
       chrome: {
-        args: ["--start-maximized", "--headless"],
+        args: ["--start-maximized"],
         defaultViewport: null,
       },
     }

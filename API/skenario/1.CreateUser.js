@@ -5,7 +5,7 @@ const Payload = require("../data/dataRequest");
 const fs = require("fs");
 
 
-Scenario('Create User', async ({ I }) => {
+Scenario('Create_User', async ({ I }) => {
     const response = await HitAPI.CreateUserNormal({
         
       PayloadHeader: Payload.headerRequest({}), 
@@ -26,3 +26,21 @@ Scenario('Create User', async ({ I }) => {
   });
 });
 
+Scenario('Create_User_Path_Selain_Post', async ({ I }) => {
+  const response = await HitAPI.CreateUserPathSelainPost({
+      
+    PayloadHeader: Payload.headerRequest({}), 
+    PayloadBody: Payload.CreateUser({})
+  });
+    expect(response.statusCode).equals(404);
+    console.log(response.statusCode);
+    const responsetojson = response.body
+ 
+  fs.readFile('./API/data/JsonData.json', 'utf8', (err, data) => {
+  const parseData = JSON.parse(data);
+  parseData[0] = responsetojson
+  console.log('Data read from file:', parseData);
+  fs.writeFile('./API/data/JsonData.json', JSON.stringify(parseData),'utf8', (err) => {
+  });
+});
+});
