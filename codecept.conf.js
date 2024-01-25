@@ -15,7 +15,11 @@ exports.config = {
     Puppeteer: {
       url: 'http://localhost',
       show: true,
-      windowSize: '1200x900'
+      windowSize: '1200x900',
+      chrome: {
+        args: ["--start-maximized", "--headless"],
+        defaultViewport: null,
+      },
     }
   },
   include: {

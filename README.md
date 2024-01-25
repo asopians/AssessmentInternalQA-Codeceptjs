@@ -15,8 +15,16 @@ Pada Repository berikut ini berisi test skenario :<br>
 9. ContactNegativeCase<br>
 
 ### API
+<<<<<<< README.md
+1. Create User (Include Abnormal)<br>
+2. Detail user (Include Abnormal)<br>
+3. Update User (Include Abnormal)<br>
+4. Delete User (Include Abnormal)<br>
+5. Chaining<br>
+=======
 1. ...
 
+>>>>>>> README.md
 
 ## Bagaimana cara mendapatkan skenario ini :
 
@@ -30,6 +38,24 @@ Download and Install Visual Code Studio dari [[official NodeJs website](https://
 Download and Install Visual Code Studio dari [[official Java website](https://www.oracle.com/java/technologies/downloads/)]
 
 ## Usage
+<<<<<<< README.md
+
+1. Buka link repository<br>
+2. Kemudian klik Clone - Visual Studio Code (HTTPS)<br>
+3. Klik open visual studio code <br>
+4. Pilih lokasi penyimpanan kemudian klik select as repository destination <br>
+5. Kemudian klik open in new window
+6. Setelah itu buka terminal dan ketikkan “npm i” dan tunggu sampai proses installasi selesai
+7. Proses installasi telah selesai dan pastikan folder node_modules sudah terbentuk
+8. Kamu bisa menjalankan skenarionya dengan awalan "npx codeceptjs run [Directory Anda] --steps
+9. Selesai.
+
+## Dsiclaimer
+1. Pastikan perangkat anda mendukung dan jaringan stabil.
+
+
+<hr>
+=======
 
 1. Buka link repository<br>
 2. Kemudian klik Clone - Visual Studio Code (HTTPS)<br>
@@ -40,6 +66,7 @@ Download and Install Visual Code Studio dari [[official Java website](https://ww
 7. Proses installasi telah selesai dan pastikan folder node_modules sudah terbentuk
 8. Kamu bisa menjalankan skenarionya dengan awalan "npx codeceptjs run [namafolder/skenario] --steps
 9. Selesai.
+
 
 </ol>
 <p class="has-line-data" data-line-start="18" data-line-end="19"><a href="https://www.spesolution.com/"><img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/c66d018e3953aa4db124a5c3ec820eec.png" alt="N|Solid"></a></p>
