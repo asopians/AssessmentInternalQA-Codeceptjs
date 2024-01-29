@@ -47,7 +47,4 @@ Download and Install Visual Code Studio dari [[official Java website](https://ww
 1. Pastikan perangkat anda mendukung dan jaringan stabil.
 2. Jika ingin browser di tampilkan silahkan buka codecept.conf.js lalu di hapus pada "--headless".
 
-<hr>
-</ol>
-<p class="has-line-data" data-line-start="18" data-line-end="19"><a href="https://www.spesolution.com/"><img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/c66d018e3953aa4db124a5c3ec820eec.png" alt="N|Solid"></a></p>
 
